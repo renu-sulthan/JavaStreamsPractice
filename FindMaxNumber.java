@@ -14,7 +14,7 @@ public class FindMaxNumber {
         List<Integer> sortedNumbers = numbers.stream()
                 .sorted(Comparator.naturalOrder())
                 .toList();
-        System.out.println("Sorted numbers in reverse: " + sortedNumbers);
+        System.out.println("Sorted numbers in ascending order: " + sortedNumbers);
         numbers.stream()
                 .max(Comparator.naturalOrder())
                 .ifPresentOrElse(
